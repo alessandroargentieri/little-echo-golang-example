@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch",
+        "type": "go",
+        "request": "launch", 
+        "mode": "debug",
+        "remotePath": "",
+        "port": 8081,
+        "host": "127.0.0.1",
+        "program": "${workspaceFolder}/main.go",
+        "args": [],
+        "env": {
+                "PORT":"8081",
+                "TENANT_ID": "1",
+                "DB_PORT":"5432",
+                "DB_HOST":"172.17.0.2",
+                "DB_USER":"templ_user",
+                "DB_PASSWORD":"templ",
+                "DB_NAME":"templ",
+                "LOG_LEVEL":"debug",
+          }, 
+        "showLog": true
+      }
+    ]
+  }
