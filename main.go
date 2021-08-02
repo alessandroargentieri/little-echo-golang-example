@@ -35,4 +35,5 @@ func main() {
 	e.Logger.Fatal(e.Start(fmt.Sprintf(":%s", os.Getenv("PORT"))))
 
 	defer conn.Db.Close()
+
 }
